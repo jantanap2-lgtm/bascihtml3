@@ -1,77 +1,81 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Canasit's Note</title>
-    </head>h
-    <body>
-        <header>
-    <h1>🍃 Leaf & Bean Café</h1>
-    <nav>
-        <a href="#drinkmenu">เมนู</a>
-        <a href="#about">เกี่ยวกับเรา</a>
-        <a href="#contact">ติดต่อ</a>
-    </nav>
-        </header>
-        <main>
-    <!-- ส่วน Hero -->
-    <section>
-        <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
-        <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
-    </section>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf & Bean Café</title>
+    <link rel="stylesheet" href="style.css">  <!-- ← สร้างไฟล์นี้ใน Week 7! -->
+</head>
+<body>
 
-    <!-- ส่วนเมนู -->
-    <section id="menu">
-        <h2>เมนูแนะนำ</h2>
-        <div>
-    <!-- การ์ดเมนูที่ 1 -->
-    <div class="menu-grid">                     <!-- จัดเป็น Grid -->
+    <!-- ═══ Header ═══ -->
+    <header class="site-header" id="top">
+        <h1 class="logo">🍃 Leaf & Bean Café</h1>
+        <nav class="main-nav">
+            <a href="#menu">เมนู</a>
+            <a href="#about">เกี่ยวกับเรา</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+    </header>
 
-    <div class="card">                           <!-- class "card" ใช้ซ้ำได้ -->
-        <h3 class="card-title">☕ Espresso</h3>
-        <p class="card-desc">เข้มข้น หอมกรุ่น</p>
-        <span class="price">฿55</span>
-    </div>
+    <!-- ═══ Main ═══ -->
+    <main>
+        <section class="hero-section">
+            <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
+            <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
+        </section>
 
-    <div class="card featured">                  <!-- 2 class: card + featured -->
-        <h3 class="card-title">🍵 Matcha Latte</h3>
-        <p class="card-desc">ชาเขียวเกรดพรีเมียม</p>
-        <span class="price">฿75</span>
-        <span class="badge bestseller">BEST SELLER</span>
-    </div>
+        <section id="menu">
+            <h2 class="section-title">เมนูแนะนำ</h2>
+            <div class="menu-grid">
+                <div class="card">
+                    <h3 class="card-title">☕ Espresso</h3>
+                    <p class="card-desc">เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
+                    <span class="price">฿55</span>
+                </div>
+                <div class="card featured">
+                    <h3 class="card-title">🍵 Matcha Latte</h3>
+                    <p class="card-desc">ชาเขียวเกรดพรีเมียมจากอุจิ</p>
+                    <span class="price">฿75</span>
+                    <span class="badge bestseller">BEST SELLER</span>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">🧊 Cold Brew</h3>
+                    <p class="card-desc">สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
+                    <span class="price">฿65</span>
+                    <span class="badge new">NEW</span>
+                </div>
+            </div>
+        </section>
 
-    <div class="card">
-        <h3 class="card-title">🧊 Cold Brew</h3>
-        <p class="card-desc">สกัดเย็น 18 ชั่วโมง</p>
-        <span class="price">฿65</span>
-        <span class="badge new">NEW</span>
-    </div>
+        <div class="content-wrapper">
+            <article id="about">
+                <h2 class="section-title">เรื่องราวของเรา</h2>
+                <p>Leaf & Bean Café เกิดจากความรักในกาแฟ
+                ของกลุ่มเพื่อนชาวศิลปากร ที่อยากสร้างพื้นที่
+                สบาย ๆ ให้ทุกคนได้มานั่งจิบกาแฟดี ๆ</p>
+                <figure>
+                    <img src="cafe-interior.jpg"
+                         alt="บรรยากาศภายใน Leaf & Bean Café">
+                    <figcaption>บรรยากาศสบาย ๆ ภายในร้าน</figcaption>
+                </figure>
+            </article>
 
-</div>
-    </section>
+            <aside class="sidebar">
+                <h3>🕐 เวลาเปิด-ปิด</h3>
+                <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
+                <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
+                <h3>📍 ที่ตั้ง</h3>
+                <p>หน้า ม.ศิลปากร วิทยาเขตสนามจันทร์</p>
+            </aside>
+        </div>
+    </main>
 
-    <!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
-    <article id="about">
-        <h2>เรื่องราวของเรา</h2>
-        <p>Leaf & Bean Café เกิดจากความรักในกาแฟ...</p>
-        <figure>
-            <img src="cafe-interior.jpg" alt="บรรยากาศภายในร้าน">
-            <figcaption>บรรยากาศสบาย ๆ ภายใน Leaf & Bean Café</figcaption>
-        </figure>
-    </article>
-</main>
-<aside>
-    <h3>🕐 เวลาเปิด-ปิด</h3>
-    <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
-    <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
-    <p>สถานะ: <span>เปิดอยู่</span></p>s
-</aside>
+    <!-- ═══ Footer ═══ -->
+    <footer class="site-footer" id="contact">
+        <p>&copy; 2026 Leaf & Bean Café. All rights reserved.</p>
+        <p>📧 hello@leafandbean.cafe | ☎ 034-XXX-XXX</p>
+    </footer>
 
-<footer id="contact">
-    <p>&copy; 2026 Leaf & Bean Café</p>
-    <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
-</footer>
-
-    </body>
-
+</body>
 </html>
