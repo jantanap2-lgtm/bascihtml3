@@ -1,0 +1,52 @@
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 845;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.site-header{
+    background-color: #FF0000;
+    color: white;
+    padding: 1rem 2rem;s
+}
+
+.hero-section{
+    background: linear-gradient(135deg, #FF0000, #FF0000);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    
+}
+/* จัดการ Layout ของสินค้าให้เรียงกัน */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* เรียงตามขนาดหน้าจออัตโนมัติ */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* จัดกึ่งกลางหน้ากระดาษ */
+}
+
+/* ตกแต่งกล่องสินค้า */
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center; /* จัดตัวอักษรและปุ่มให้อยู่ตรงกลาง */
+    border-radius: 10px;
+}
+
+/* จัดการขนาดรูปสินค้า */
+.product-img {
+    width: 100%;
+    max-width: 200px; /* คุมขนาดรูปไม่ให้ใหญ่เกินไป */
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name { font-weight: bold; font-size: 1.2rem; margin: 10px 0; }
+.product-price { color: #e44d26; font-size: 1.1rem; }
+.bestseller { background: #fef9c3; color: #854d0e; }
