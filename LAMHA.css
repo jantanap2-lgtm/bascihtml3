@@ -13,12 +13,30 @@ body {
     padding: 1rem 2rem;s
 }
 
-.hero-section{
-    background: linear-gradient(135deg, #FF0000, #FF0000);
+.logo{
+    background-color: #FF0000;
     color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    
+    padding: 1rem 2rem;s
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.cart-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    width: 100px; 
+    text-align: right;
 }
 
 .product-grid {
