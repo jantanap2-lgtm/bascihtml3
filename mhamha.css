@@ -1,0 +1,71 @@
+
+.meat-info-section {
+    padding: 50px 5%;
+    background-color: #fff;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.meat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.meat-card {
+    display: flex;
+    background: #fdfdfd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    position: relative;
+}
+
+.meat-img {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.meat-content {
+    padding: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meat-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.meat-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--dark);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.meat-badge.highlight {
+    background: var(--primary);
+}
+
+.meat-meta {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
