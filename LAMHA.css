@@ -13,13 +13,6 @@ body {
     padding: 1rem 2rem;s
 }
 
-.logo{
-    background-color: #FF0000;
-    color: white;
-    padding: 1rem 2rem;s
-}
-
-
 .header-container {
     display: flex;
     justify-content: space-between; 
