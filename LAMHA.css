@@ -20,29 +20,29 @@ body {
     padding: 4rem 2rem;
     
 }
-/* จัดการ Layout ของสินค้าให้เรียงกัน */
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* เรียงตามขนาดหน้าจออัตโนมัติ */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* จัดกึ่งกลางหน้ากระดาษ */
+    margin: 0 auto; 
 }
 
-/* ตกแต่งกล่องสินค้า */
+
 .product-item {
     background: #fff;
     border: 1px solid #ddd;
     padding: 15px;
-    text-align: center; /* จัดตัวอักษรและปุ่มให้อยู่ตรงกลาง */
+    text-align: center; 
     border-radius: 10px;
 }
 
-/* จัดการขนาดรูปสินค้า */
+
 .product-img {
     width: 100%;
-    max-width: 200px; /* คุมขนาดรูปไม่ให้ใหญ่เกินไป */
+    max-width: 200px; 
     height: auto;
     border-radius: 8px;
 }
