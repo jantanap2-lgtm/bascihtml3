@@ -31,9 +31,19 @@
     
 
     <main>
-        <section class="hero-section" style="text-align: center; padding: 20px;">
-            <img src="LAMHA.png" width="800" alt="โลโก้ร้านล่าหมา" style="max-width: 100%; height: auto;">
-        </section>
+        <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="LAMHA.png" alt="โลโก้ร้านล่าหมา 1">
+            <img src="kai.jpg" alt="โปรโมชั่น 1"> 
+            <img src="mhoo.png" alt="โปรโมชั่น 2">
+        </div>
+        
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
 
         <section id="menu">
             <h2 style="text-align: center;">เมนูของเรา</h2>
@@ -83,12 +93,36 @@
                 </div>
             
         </section>
+        
+        
     </main>
 
     <footer class="site-footer" id="contact">
         <p>&copy; TikTok : LAMHA.MHALA</p>
         <p>📧 YAKKINMHA@gmail.com | ☎ 083-XXX-XXX</p>
     </footer>
+    <script>
+    const slide = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    const dots = document.querySelectorAll('.dot');
+
+    let counter = 0;
+    const size = 100; // เลื่อนทีละ 100%
+
+    function moveSlide() {
+        counter++;
+        if (counter >= images.length) counter = 0;
+        
+        slide.style.transform = 'translateX(' + (-size * counter) + '%)';
+        
+        // Update dots
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[counter].classList.add('active');
+    }
+
+    // เลื่อนอัตโนมัติทุก 3 วินาที
+    setInterval(moveSlide, 3000);
+</script>
 
 </body>
 </html>
