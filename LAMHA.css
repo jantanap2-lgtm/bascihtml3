@@ -117,3 +117,60 @@ body {
     color: white;
     padding: 1rem 2rem; /* แก้จาก 2rem;s เป็น 2rem; */
 }
+
+.hero-section {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* กันรูปส่วนเกินล้นออกมา */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* ขนาดเท่ากับที่ระบุใน HTML เดิม */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px; /* เพิ่มความโค้งมนให้ดูทันสมัย */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* เพิ่มเงาให้นูนสวย */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* เลื่อนแบบนุ่มนวล */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* จุดบอกตำแหน่ง (Dots) */
+.carousel-dots {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #FF0000; /* ใช้สีแดงเดียวกับ Header */
+    transform: scale(1.2); /* ขยายจุดที่เลือกให้เด่นขึ้น */
+}
+
+/* ลบตัวอักษร 's' ที่เกินมาใน .site-header เดิมของคุณด้วยนะครับ */
+.site-header {
+    background-color: #FF0000;
+    color: white;
+    padding: 1rem 2rem; /* แก้จาก 2rem;s เป็น 2rem; */
+}
